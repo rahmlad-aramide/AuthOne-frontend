@@ -94,9 +94,9 @@ export const Navbar = () => {
     const router = useRouter();
     return (
         <>
-            <header className="h-[104px] w-full bg-[#292D32] flex flex-col items-center justify-center">
-                <nav className="w-[calc(100%_-_160px)] max-w-8xl mx-auto flex justify-between items-center">
-                    <Link href="/" className="mb-2"><Logo /></Link>
+            <header className="h-20 md:h-[104px] w-full bg-[#292D32] flex flex-col items-center justify-center">
+                <nav className="w-[calc(100%_-_64px)] md:w-[calc(100%_-_160px)] max-w-8xl mx-auto flex justify-between items-center">
+                    <Link href="/" className="mb-2"><Logo className="h-6 md:h-full" /></Link>
                     <ul className="hidden lg:flex gap-5 items-center">
                                 {navLinks.map((navLink, idx) =>
                                     navLink.type === "dropdown" ? (

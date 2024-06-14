@@ -22,3 +22,8 @@ html, body {
 .bg-size {
     background-size: 240px;
 }
+@media (max-width:640px) {
+    .bg-size {
+        background-size: 140px;
+    }
+}
