@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import "./fonts/stylesheet.css"
 import { Navbar } from "@/components/navbar";
 import { gilroy } from "./fonts";
 

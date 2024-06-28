@@ -107,7 +107,7 @@ export const Navbar = () => {
                                                         className={`${
                                                             pathname === navLink.path ||
                                                             pathname ===
-                                                                (navLink.subLinks && navLink?.subLinks[idx]?.path)
+                                                              (navLink.subLinks && navLink?.subLinks[idx]?.path)
                                                                 ? "text-white"
                                                                 : "hover:text-white"
                                                         } text-white hover:text-white/80 font-semibold font-poppins flex items-center text-[15px] p-0`}

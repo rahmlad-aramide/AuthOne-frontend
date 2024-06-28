@@ -27,3 +27,5 @@ export const gilroy = localFont({
     },
   ],
 })
+
+export const sfPro = localFont({ src: './fonts/SF-Pro-Rounded-Semibold.otf' })

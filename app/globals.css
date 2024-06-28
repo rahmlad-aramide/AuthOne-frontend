@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
     height: 100%;
     min-height: 100vh;
 }
@@ -19,9 +20,33 @@ html, body {
     z-index: -1;
     border-radius: 0px 0px 80px 80px;
 }
+
 .bg-size {
     background-size: 240px;
 }
+
+.animate-slide-in {
+    animation: slide-in 500ms ease-in-out forwards;
+}
+
+.animate-slide-out {
+    animation: slide-out 500ms ease-in-out forwards;
+}
+
+.gradient-border {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #DE4EAC, #5C4EDE) 1;
+    border-radius: 60px;
+}
+
+.heading-text {
+    background: linear-gradient(to right, #DE4EAC, #5C4EDE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media (max-width:640px) {
     .bg-size {
         background-size: 140px;
