@@ -60,17 +60,17 @@ const navLinks: NavLink[] = [
 			},
 		],
 	},
-	{
-		label: "Our Projects",
-		type: "dropdown",
-		subLinks: [
-			{
-				title: "Link 1",
-				subtitle: "Link 1 subtitle",
-				path: "/",
-			},
-		],
-	},
+	// {
+	// 	label: "Our Projects",
+	// 	type: "dropdown",
+	// 	subLinks: [
+	// 		{
+	// 			title: "Link 1",
+	// 			subtitle: "Link 1 subtitle",
+	// 			path: "/",
+	// 		},
+	// 	],
+	// },
 	{
 		label: "Pricing",
 		path: "/pricing",

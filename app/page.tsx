@@ -6,6 +6,9 @@ import { CarouselSection } from "@/components/carousel";
 import { ProcessSection } from "@/components/process-section";
 import Image from "next/image";
 import codeImage from '@/app/assets/images/code.png'
+import { FAQSSection } from "@/components/faqs-section";
+import { Footer } from "@/components/footer";
+import { OnboardingSection } from "@/components/onboarding-section";
 
 export default function Home() {
   return (
@@ -37,15 +40,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#22262C]">
-        <Image src={codeImage} width={1280} height={600} alt="4 tabs code interface of AuthOne"
-              className="mt-[60px] md:mt-[120px] z-10 relative flex w-[calc(100%_-_32px)] max-w-[1280px] mx-auto"
-          />
-      </section>
-      <section className="hidden">
+      <section className="">
         <CarouselSection />
       </section>
       <ProcessSection />
+      <OnboardingSection />
+      <FAQSSection />
+      <Footer />
     </main>
   );
 }

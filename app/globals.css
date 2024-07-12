@@ -46,9 +46,90 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.seamless-container {
+    background-image: url('/images/bg-seamless2.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.seamless-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    display: block;
+    border-radius: 60px 0px 0px 0px;
+    background-image: url('/images/bg-seamless1.png');
+    background-repeat: no-repeat;
+}
+.seamless-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    height: 200px;
+    width: 200px;
+    display: block;
+    border-radius: 0px 0px 50px 35px;
+    background-image: url('/images/bg-seamless3.png');
+    background-repeat: no-repeat;
+}
+
+/* .change-container {
+    background-image: url('/images/bg-seamless2.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+} */
+.change-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 222px;
+    width: 146px;
+    display: block;
+    border-radius: 0px 60px 0px 0px;
+    background-image: url('/images/bg-change2.png');
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.change-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 155px;
+    width: 290px;
+    display: block;
+    border-radius: 0px 0px 0px 60px;
+    background-image: url('/images/bg-change1.png');
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
 
 @media (max-width:640px) {
     .bg-size {
         background-size: 140px;
     }
 }
+
+.slider {
+    /* margin:0 20px; */
+    margin-right: 20px;
+    margin-left: 20px;
+    overflow:"hidden";
+    min-height: 495.59px !important;
+    /* padding:2rem 0; */
+  }
+  
+  /* .slider img {
+    width: 100%;
+    border-radius:10px;
+  } */
+/*   
+  .react-multi-carousel-list {
+  padding: 0rem 0 2rem 0;
+  } */

@@ -19,9 +19,10 @@ const config = {
     },
     extend: {
       colors: {
-        primary: '#5C4EDE',
+        primary: '#5C4EDE' /* purple */,
+        secondary: '#DE4EAC' /* pink */,
+        tertiary: '#5BBE8A' /* green */,
         dark: '#292D32',
-        // gradientProcess: 'linear-gradient(180deg, #22262C 0%, #433E88 50%, #5C4EDE 100%)'
       },
       maxWidth: {
         "8xl": "1400px",
@@ -52,7 +53,8 @@ const config = {
       },
       backgroundImage: {
         heroBg: "url('/images/hero-bg.png')",
-        gradientProcess: 'linear-gradient(360deg, #22262C 0%, #433E88 50%, #5C4EDE 100%)'
+        gradientProcess: 'linear-gradient(360deg, #22262C 0%, #433E88 50%, #5C4EDE 100%)',
+        seamlessBg: "url('/images/bg-seamless2.png')",
       }
     },
   },
